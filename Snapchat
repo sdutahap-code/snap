@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open in Browser</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#000;
+color:#fff;
+text-align:center;
+overflow-x:hidden;
+}
+
+.header{
+padding:18px;
+font-size:28px;
+font-weight:bold;
+position:relative;
+}
+
+.menu{
+position:absolute;
+top:18px;
+right:20px;
+font-size:32px;
+}
+
+.banner{
+background:#ffd400;
+color:#000;
+font-weight:bold;
+font-size:22px;
+padding:16px;
+}
+
+.arrow{
+position:fixed;
+top:20px;
+right:20px;
+font-size:90px;
+color:#ffd400;
+animation:arrow 0.8s infinite alternate;
+filter:drop-shadow(0 0 12px #ffd400);
+}
+
+.tap{
+position:fixed;
+top:95px;
+right:110px;
+color:#ffd400;
+font-size:24px;
+font-weight:bold;
+animation:pulse 1s infinite;
+}
+
+@keyframes arrow{
+0%{
+transform:translate(-18px,18px) rotate(-30deg);
+}
+100%{
+transform:translate(0,0) rotate(-30deg) scale(1.15);
+}
+}
+
+@keyframes pulse{
+0%,100%{opacity:1;}
+50%{opacity:.4;}
+}
+
+.card{
+width:92%;
+margin:40px auto;
+background:#111;
+border-radius:20px;
+padding:25px;
+}
+
+.card h1{
+font-size:38px;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:22px;
+color:#ddd;
+margin:15px 0;
+}
+
+.button{
+display:block;
+width:90%;
+margin:35px auto;
+padding:22px;
+background:#ffd400;
+color:#000;
+font-size:32px;
+font-weight:bold;
+border-radius:20px;
+text-decoration:none;
+animation:glow 1.2s infinite;
+}
+
+@keyframes glow{
+0%{box-shadow:0 0 10px #ffd400;}
+50%{box-shadow:0 0 30px #ffd400;}
+100%{box-shadow:0 0 10px #ffd400;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+Loading...
+<div class="menu">•••</div>
+</div>
+
+<div class="banner">
+Open in your browser for the best experience
+</div>
+
+<div class="arrow">➜</div>
+<div class="tap">Tap ••• here</div>
+
+<div class="card">
+<h1>Unlock Full Access</h1>
+
+<p>1. Tap the <b>(•••)</b> icon in the top right.</p>
+
+<p>2. Select <b>Open in Browser</b>.</p>
+
+<p>3. Enjoy the full experience.</p>
+</div>
+
+<a class="button"
+href="https://beacons.ai/emilyyy_hot">
+Open in Browser →
+</a>
+
+</body>
+</html>
