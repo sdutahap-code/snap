@@ -10,7 +10,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
@@ -19,126 +19,142 @@ color:#fff;
 }
 
 .top{
-background:#ffe600;
-padding:16px;
-display:flex;
-justify-content:space-between;
-font-weight:bold;
+background:#FFD400;
 color:#000;
+padding:18px;
 font-size:22px;
+font-weight:bold;
+text-align:center;
 }
 
-.wrap{
-max-width:420px;
+.container{
+max-width:430px;
 margin:30px auto;
 padding:15px;
 }
 
-.detect{
+.browser{
+background:#222;
 border:1px solid #444;
-border-radius:40px;
-padding:12px;
+border-radius:50px;
+padding:14px;
 text-align:center;
-color:#bbb;
-margin-bottom:25px;
+font-size:18px;
+color:#ddd;
+margin-bottom:20px;
 }
 
 .card{
 background:#fff;
-color:#000;
-border-radius:25px;
-padding:25px;
+color:#111;
+border-radius:24px;
+padding:28px;
+box-shadow:0 10px 30px rgba(0,0,0,.35);
 }
 
-.card h2{
+h1{
 font-size:34px;
 margin-bottom:15px;
 }
 
-.card p{
-font-size:22px;
-line-height:1.5;
-margin-bottom:15px;
+p{
+font-size:18px;
+line-height:1.6;
+color:#444;
+margin-bottom:20px;
 }
 
 .step{
 display:flex;
 align-items:center;
 margin:18px 0;
-font-size:20px;
+font-size:18px;
 }
 
-.num{
-width:38px;
-height:38px;
+.number{
+width:36px;
+height:36px;
+background:#FFD400;
 border-radius:50%;
-background:#ffe600;
 display:flex;
 align-items:center;
 justify-content:center;
 font-weight:bold;
-margin-right:15px;
+margin-right:14px;
+color:#000;
 }
 
 .button{
 display:block;
-margin-top:35px;
-background:#ffe600;
+margin-top:30px;
+background:#FFD400;
 color:#000;
-text-align:center;
-padding:20px;
-border-radius:20px;
 text-decoration:none;
-font-size:28px;
+text-align:center;
+padding:18px;
+border-radius:15px;
+font-size:22px;
 font-weight:bold;
 }
-</style>
-</head>
 
+.footer{
+margin-top:18px;
+text-align:center;
+font-size:14px;
+color:#999;
+}
+</style>
+
+</head>
 <body>
 
 <div class="top">
-<div>⚠ Restricted</div>
-<div>Tap ••• here ↑</div>
+⚠ Continue to Website
 </div>
 
-<div class="wrap">
+<div class="container">
 
-<div class="detect">
-🟡 Detected: Snapchat Browser
+<div class="browser">
+📱 Browser detected
 </div>
 
 <div class="card">
 
-<h2>Unlock full access</h2>
+<h1>Open Link</h1>
 
 <p>
-Snapchat restricts content.<br>
-Follow the steps below.
+For the best experience, tap the button below to continue.
 </p>
 
 <div class="step">
-<div class="num">1</div>
-Tap the (...) icon
+<div class="number">1</div>
+Tap the button below
 </div>
 
 <div class="step">
-<div class="num">2</div>
-Select <b>Open in Browser</b>
+<div class="number">2</div>
+The website will open
 </div>
 
 <div class="step">
-<div class="num">3</div>
-Enjoy the full experience
+<div class="number">3</div>
+Enjoy your visit
 </div>
 
-<a class="button" href="https://beacons.ai/emilyyy_hot">
-🌐 Open in Browser →
+<a class="button"
+href="https://beacons.ai/emilyyy_hot"
+target="_blank"
+rel="noopener">
+🌐 Continue
 </a>
 
+</div>
+
+<div class="footer">
+Powered by GitHub Pages
 </div>
 
 </div>
 
 </body>
-</html>
+</html> 
