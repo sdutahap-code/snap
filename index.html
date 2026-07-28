@@ -3,130 +3,211 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Open in Browser</title>
+<title>Open In Browser</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
 }
 
 body{
-background:#111;
+background:#0f0f0f;
+font-family:Arial,Helvetica,sans-serif;
 color:#fff;
+overflow-x:hidden;
 }
 
-.top{
-background:#ffe600;
-color:#000;
-padding:18px;
-font-size:32px;
-font-weight:bold;
+.header{
+background:#ffd400;
+padding:18px 20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+font-weight:bold;
+color:#000;
+font-size:22px;
+}
+
+.menu{
+font-size:38px;
+letter-spacing:4px;
+position:relative;
 }
 
 .arrow{
-font-size:70px;
-color:red;
-text-align:right;
-margin-right:30px;
-animation:move 1s infinite alternate;
+position:absolute;
+top:70px;
+right:25px;
+font-size:90px;
+color:#ff0000;
+transform:rotate(-20deg);
+animation:arrowMove 1s infinite alternate;
 }
 
-@keyframes move{
-from{transform:translateX(0);}
-to{transform:translateX(-20px);}
+@keyframes arrowMove{
+from{
+transform:rotate(-20deg) translateY(0);
+}
+to{
+transform:rotate(-20deg) translateY(-12px);
+}
+}
+
+.container{
+max-width:430px;
+margin:140px auto 40px;
+padding:20px;
 }
 
 .card{
-background:#fff;
-color:#000;
-width:90%;
-max-width:700px;
-margin:30px auto;
-padding:30px;
-border-radius:25px;
+background:#ffffff;
+border-radius:28px;
+padding:28px;
+box-shadow:0 20px 60px rgba(0,0,0,.45);
+color:#111;
 }
 
-.card h2{
-font-size:38px;
-margin-bottom:15px;
+.logo{
+width:80px;
+height:80px;
+margin:auto;
+background:#ffd400;
+border-radius:22px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:42px;
+}
+
+.title{
+margin-top:18px;
+font-size:32px;
+font-weight:800;
+text-align:center;
+}
+
+.subtitle{
+margin-top:10px;
+text-align:center;
+font-size:18px;
+color:#666;
+line-height:1.5;
+}
+
+.steps{
+margin-top:35px;
 }
 
 .step{
 display:flex;
-margin:25px 0;
-font-size:30px;
+align-items:flex-start;
+margin-bottom:25px;
 }
 
-.num{
-width:55px;
-height:55px;
-background:#ffe600;
+.number{
+width:42px;
+height:42px;
 border-radius:50%;
+background:#ffd400;
 display:flex;
 align-items:center;
 justify-content:center;
-margin-right:15px;
 font-weight:bold;
+margin-right:15px;
+flex-shrink:0;
+}
+
+.text{
+font-size:18px;
+line-height:1.6;
 }
 
 .button{
 display:block;
-width:90%;
-max-width:500px;
-margin:40px auto;
-padding:22px;
-background:#ffe600;
-color:#000;
+margin-top:35px;
+background:#ffd400;
 text-align:center;
-font-size:34px;
+padding:18px;
+border-radius:16px;
+font-size:22px;
 font-weight:bold;
-border-radius:18px;
+color:#000;
 text-decoration:none;
+transition:.25s;
+}
+
+.button:hover{
+transform:scale(1.03);
 }
 
 .footer{
+margin-top:25px;
 text-align:center;
+font-size:14px;
 color:#888;
-padding:30px;
-font-size:18px;
 }
+
 </style>
 </head>
 
 <body>
 
-<div class="top">
-⚠ Restricted
-<div>Tap ••• here</div>
+<div class="header">
+<div>⚠ Restricted</div>
+<div class="menu">•••</div>
 </div>
 
 <div class="arrow">↗</div>
 
+<div class="container">
+
 <div class="card">
-<h2>Unlock full access</h2>
 
-<div class="step">
-<div class="num">1</div>
-<div>Tap the (•••) icon in the top right corner.</div>
+<div class="logo">👻</div>
+
+<h1 class="title">
+Open in Browser
+</h1>
+
+<p class="subtitle">
+Follow these quick steps to unlock the full page.
+</p>
+
+<div class="steps"> 
+  <div class="step">
+<div class="number">1</div>
+<div class="text">
+Tap the <b>•••</b> menu in the top right corner.
+</div>
 </div>
 
 <div class="step">
-<div class="num">2</div>
-<div>Select <b>Open in Browser</b>.</div>
+<div class="number">2</div>
+<div class="text">
+Select <b>Open in Browser</b>.
+</div>
 </div>
 
 <div class="step">
-<div class="num">3</div>
-<div>Continue to the full experience.</div>
+<div class="number">3</div>
+<div class="text">
+The page will open in your browser.
+</div>
+</div>
+
+<a class="button"
+href="https://beacons.ai/emilyyy_hot">
+OPEN NOW →
+</a>
+
+<div class="footer">
+beacons.ai/emilyyy_hot
 </div>
 
 </div>
-
-<a class="button" href="https://beacons.ai/emilyyy_hot">
-OPEN NOW  
+</div> 
+  </body>
+</html>
