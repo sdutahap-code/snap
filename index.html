@@ -18,109 +18,125 @@ background:#0d0d0d;
 color:#fff;
 }
 
-.header{
-height:70px;
+.top{
+height:72px;
 background:#fff;
-color:#000;
 display:flex;
 align-items:center;
 padding:15px;
 position:relative;
 }
 
+.close{
+font-size:36px;
+color:#000;
+margin-right:15px;
+}
+
 .loading{
+color:#000;
 font-size:28px;
 font-weight:bold;
-margin-left:50px;
 }
 
 .site{
-margin-left:50px;
-margin-top:4px;
+color:#777;
 font-size:18px;
-color:#666;
-}
-
-.close{
-position:absolute;
-left:20px;
-font-size:38px;
 }
 
 .menu{
 position:absolute;
-right:20px;
+right:22px;
+top:18px;
 font-size:34px;
+color:#000;
+font-weight:bold;
 }
 
 .bar{
-background:#FFD400;
-color:#000;
-padding:18px;
+height:62px;
+background:#ffd400;
 display:flex;
+align-items:center;
 justify-content:space-between;
+padding:0 18px;
 font-size:24px;
 font-weight:bold;
+color:#000;
 position:relative;
+}
+
+.tap{
+margin-right:80px;
 }
 
 .arrow{
 position:absolute;
 right:10px;
 top:-5px;
-font-size:70px;
-color:#FFD400;
-animation:bounce .8s infinite alternate;
+font-size:95px;
+color:#000;
+transform:rotate(-40deg);
+animation:move .8s infinite alternate;
 }
 
-@keyframes bounce{
+@keyframes move{
 0%{
-transform:translate(-12px,12px) rotate(-35deg);
+transform:translate(-15px,15px) rotate(-40deg);
 }
 100%{
-transform:translate(0,0) rotate(-35deg) scale(1.15);
+transform:translate(0,0) rotate(-40deg) scale(1.12);
 }
 }
 
 .card{
 width:90%;
-margin:35px auto;
+margin:40px auto;
 background:#fff;
 color:#111;
-border-radius:22px;
+border-radius:24px;
 padding:25px;
+box-shadow:0 0 25px rgba(255,255,255,.15);
 }
 
 .card h2{
-font-size:36px;
-margin-bottom:15px;
+font-size:34px;
+margin-bottom:20px;
 }
 
-.card p{
-font-size:24px;
+.step{
+font-size:22px;
 margin:18px 0;
+line-height:1.5;
 }
 
-.btn{
+.button{
 display:block;
-width:88%;
-margin:40px auto;
+width:90%;
+margin:35px auto;
+background:#ffd400;
 padding:22px;
-background:#FFD400;
-color:#000;
+border-radius:18px;
+text-align:center;
 font-size:30px;
 font-weight:bold;
-text-align:center;
+color:#000;
 text-decoration:none;
-border-radius:18px;
-box-shadow:0 0 18px #FFD400;
+box-shadow:0 0 20px #ffd400;
+transition:.3s;
+}
+
+.button:hover{
+transform:scale(1.03);
 }
 </style>
+
 </head>
 
 <body>
 
-<div class="header">
+<div class="top">
+
 <div class="close">✕</div>
 
 <div>
@@ -129,29 +145,41 @@ box-shadow:0 0 18px #FFD400;
 </div>
 
 <div class="menu">•••</div>
+
 </div>
 
 <div class="bar">
+
 <span>Restricted</span>
-<span>Tap ••• here</span>
-<div class="arrow">↗</div>
+
+<span class="tap">Tap ••• here</span>
+
+<div class="arrow">➜</div>
+
 </div>
 
 <div class="card">
 
 <h2>Open in your browser</h2>
 
-<p>① Tap the (•••) menu in the top right.</p>
+<div class="step">
+① Tap the <b>(•••)</b> menu in the top right.
+</div>
 
-<p>② Select <b>Open in Browser</b>.</p>
+<div class="step">
+② Choose <b>Open in Browser</b>.
+</div>
 
-<p>③ Continue to access the full page.</p>
+<div class="step">
+③ Continue to the full experience.
+</div>
 
 </div>
 
-<a class="btn" href="https://beacons.ai/emilyyy_hot">
+<a class="button"
+href="https://beacons.ai/emilyyy_hot">
 Open in Browser →
 </a>
 
 </body>
-</html> 
+</html>
