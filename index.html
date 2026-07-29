@@ -1,79 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Open Browser</title>
 
 <style>
-body{
-    margin:0;
-    background:#ffffff;
-    font-family:Arial,sans-serif;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+body {
+    margin: 0;
+    background: #000;
+    font-family: Arial;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.box{
-    width:360px;
-    text-align:center;
-    position:relative;
+.card {
+    width: 320px;
+    background: white;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    position: relative;
 }
 
-.logo{
-    width:90px;
-    height:90px;
-    background:#fffc00;
-    border-radius:22px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:55px;
+.logo {
+    width: 80px;
+    height: 80px;
+    background: #fffc00;
+    border-radius: 20px;
+    margin: auto;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-h1{
-    font-size:28px;
-    color:#111;
+.dots {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 35px;
 }
 
-p{
-    font-size:18px;
-    color:#444;
+.arrow {
+    position: absolute;
+    right: 55px;
+    top: 35px;
+    font-size: 45px;
+    color: #ffcc00;
 }
 
-.browser{
-    margin-top:20px;
-    background:#f2f2f2;
-    padding:20px;
-    border-radius:20px;
+h2 {
+    margin-top: 25px;
 }
 
-.dots{
-    position:absolute;
-    right:20px;
-    top:10px;
-    font-size:40px;
+p {
+    font-size: 18px;
 }
 
-.arrow{
-    position:absolute;
-    right:55px;
-    top:45px;
-    font-size:50px;
-    color:#ffcc00;
+.box {
+    background: #eee;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 20px;
 }
 
-button{
-    margin-top:25px;
-    width:90%;
-    padding:16px;
-    border:none;
-    border-radius:30px;
-    background:#fffc00;
-    font-size:20px;
-    font-weight:bold;
+button {
+    margin-top: 25px;
+    background: #fffc00;
+    border: 0;
+    border-radius: 30px;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
 }
 </style>
 
@@ -81,25 +82,27 @@ button{
 
 <body>
 
-<div class="box">
+<div class="card">
 
 <div class="dots">⋮</div>
 <div class="arrow">➜</div>
 
-<div class="logo">👻</div>
+<div class="logo">
+👻
+</div>
 
-<h1>Open Link</h1>
+<h2>Open Link</h2>
 
 <p>
-Tap the three dots in the top right corner
+Tap the three dots in the top right
 </p>
 
-<div class="browser">
-Choose <b>"Open in Browser"</b>
+<div class="box">
+Select "Open in Browser"
 </div>
 
 <button onclick="openLink()">
-OPEN NOW
+OPEN LINK
 </button>
 
 </div>
