@@ -2,36 +2,30 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Open in Browser</title>
+<title>Open Browser</title>
 
 <style>
-
 body{
     margin:0;
+    background:#ffffff;
+    font-family:Arial,sans-serif;
     height:100vh;
-    background:#000;
-    font-family:Arial, sans-serif;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.card{
-    width:350px;
-    background:#111;
-    color:white;
-    border-radius:25px;
-    padding:30px 20px;
+.box{
+    width:360px;
     text-align:center;
     position:relative;
 }
 
-.snap{
-    width:85px;
-    height:85px;
+.logo{
+    width:90px;
+    height:90px;
     background:#fffc00;
-    border-radius:20px;
+    border-radius:22px;
     margin:auto;
     display:flex;
     align-items:center;
@@ -40,89 +34,82 @@ body{
 }
 
 h1{
-    margin:20px 0;
+    font-size:28px;
+    color:#111;
 }
 
-.menu{
+p{
+    font-size:18px;
+    color:#444;
+}
+
+.browser{
+    margin-top:20px;
+    background:#f2f2f2;
+    padding:20px;
+    border-radius:20px;
+}
+
+.dots{
     position:absolute;
-    top:15px;
     right:20px;
-    font-size:35px;
-    color:white;
+    top:10px;
+    font-size:40px;
 }
 
 .arrow{
     position:absolute;
-    top:45px;
     right:55px;
-    color:#fffc00;
-    font-size:45px;
-    transform:rotate(20deg);
-}
-
-.text{
-    background:#222;
-    padding:15px;
-    border-radius:15px;
-    margin-top:20px;
-    font-size:17px;
+    top:45px;
+    font-size:50px;
+    color:#ffcc00;
 }
 
 button{
     margin-top:25px;
-    width:100%;
+    width:90%;
     padding:16px;
     border:none;
     border-radius:30px;
     background:#fffc00;
-    font-size:18px;
+    font-size:20px;
     font-weight:bold;
 }
-
 </style>
 
 </head>
 
 <body>
 
-<div class="card">
+<div class="box">
 
-<div class="menu">
-⋮
-</div>
+<div class="dots">⋮</div>
+<div class="arrow">➜</div>
 
-<div class="arrow">
-↗
-</div>
-
-<div class="snap">
-👻
-</div>
+<div class="logo">👻</div>
 
 <h1>Open Link</h1>
 
-<div class="text">
+<p>
 Tap the three dots in the top right corner
-</div>
+</p>
 
-<div class="text">
-Select "Open in Browser"
+<div class="browser">
+Choose <b>"Open in Browser"</b>
 </div>
 
 <button onclick="openLink()">
-OPEN LINK
+OPEN NOW
 </button>
 
 </div>
 
 
 <script>
-
 function openLink(){
-    window.location.href="https://linktr.ee/Emilyyy_hot";
+window.location.href="https://linktr.ee/Emilyyy_hot";
 }
-
 </script>
 
 </body>
-</html> 
+</html>
