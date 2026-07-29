@@ -2,117 +2,130 @@
 <html lang="sq">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Snap Link</title>
+
+<title>Open Link</title>
 
 <style>
-* {
-  box-sizing: border-box;
+
+body{
+    margin:0;
+    height:100vh;
+    background:#0b0b0b;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-body {
-  margin: 0;
-  background: linear-gradient(#050505, #1a1a1a);
-  font-family: Arial, sans-serif;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container{
+    width:340px;
+    background:#171717;
+    border-radius:30px;
+    padding:30px;
+    text-align:center;
+    color:white;
+    box-shadow:0 0 30px #000;
 }
 
-.phone {
-  width: 350px;
-  background: #000;
-  border-radius: 35px;
-  padding: 25px;
-  color: white;
-  text-align: center;
-  border: 3px solid #333;
+.logo{
+    width:90px;
+    height:90px;
+    margin:auto;
+    background:#fffc00;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:55px;
 }
 
-.snap {
-  width: 85px;
-  height: 85px;
-  background: #fffc00;
-  border-radius: 25px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 55px;
+h1{
+    font-size:26px;
+    margin:20px 0;
 }
 
-.title {
-  font-size: 25px;
-  margin: 20px 0;
+.step{
+    background:#222;
+    border-radius:20px;
+    padding:15px;
+    font-size:17px;
+    margin-top:15px;
 }
 
-.instruction {
-  background: #161616;
-  padding: 15px;
-  border-radius: 15px;
-  font-size: 17px;
+.arrow{
+    font-size:60px;
+    color:#fffc00;
+    animation:move 1s infinite;
 }
 
-.arrow {
-  font-size: 55px;
-  color: #fffc00;
-  margin: 15px 0;
+@keyframes move{
+    50%{
+        transform:translateY(-10px);
+    }
 }
 
-.button {
-  margin-top: 25px;
-  width: 100%;
-  padding: 16px;
-  border-radius: 30px;
-  border: none;
-  background: #fffc00;
-  font-size: 18px;
-  font-weight: bold;
+.btn{
+    margin-top:25px;
+    background:#fffc00;
+    color:#000;
+    padding:17px;
+    width:100%;
+    border:0;
+    border-radius:35px;
+    font-size:20px;
+    font-weight:bold;
 }
 
-.button:hover {
-  opacity: 0.8;
+.top{
+    display:flex;
+    justify-content:flex-end;
+    font-size:35px;
 }
+
 </style>
 
 </head>
 
 <body>
 
-<div class="phone">
+<div class="container">
 
-  <div class="snap">👻</div>
+<div class="top">
+⋮
+</div>
 
-  <div class="title">
-    Hap në Browser
-  </div>
+<div class="logo">
+👻
+</div>
 
-  <div class="instruction">
-    Shtyp te 3 pikat
-    <br>
-    lart djathtas
-  </div>
+<h1>Hap Linkun</h1>
 
-  <div class="arrow">
-    ↗ ⋮
-  </div>
+<div class="step">
+Kliko 3 pikat lart djathtas
+</div>
 
-  <div class="instruction">
-    Zgjidh "Open in Browser"
-  </div>
+<div class="arrow">
+⬆
+</div>
 
-  <button class="button" onclick="go()">
-    HAP LINKUN
-  </button>
+<div class="step">
+Pastaj hap në Browser
+</div>
+
+<button class="btn" onclick="openPage()">
+HAP TANI
+</button>
 
 </div>
 
 
 <script>
-function go(){
-  window.location.href="https://linktr.ee/Emilyyy_hot";
+
+function openPage(){
+window.location.href="https://linktr.ee/Emilyyy_hot";
 }
+
 </script>
 
 </body>
-</html>
+</html> 
