@@ -1,85 +1,82 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Open Link</title>
+<title>Open in Browser</title>
 
 <style>
 
 body{
     margin:0;
     height:100vh;
-    background:#0b0b0b;
-    font-family:Arial,sans-serif;
+    background:#000;
+    font-family:Arial, sans-serif;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-.container{
-    width:340px;
-    background:#171717;
-    border-radius:30px;
-    padding:30px;
-    text-align:center;
+.card{
+    width:350px;
+    background:#111;
     color:white;
-    box-shadow:0 0 30px #000;
+    border-radius:25px;
+    padding:30px 20px;
+    text-align:center;
+    position:relative;
 }
 
-.logo{
-    width:90px;
-    height:90px;
-    margin:auto;
+.snap{
+    width:85px;
+    height:85px;
     background:#fffc00;
-    border-radius:50%;
+    border-radius:20px;
+    margin:auto;
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     font-size:55px;
 }
 
 h1{
-    font-size:26px;
     margin:20px 0;
 }
 
-.step{
-    background:#222;
-    border-radius:20px;
-    padding:15px;
-    font-size:17px;
-    margin-top:15px;
+.menu{
+    position:absolute;
+    top:15px;
+    right:20px;
+    font-size:35px;
+    color:white;
 }
 
 .arrow{
-    font-size:60px;
+    position:absolute;
+    top:45px;
+    right:55px;
     color:#fffc00;
-    animation:move 1s infinite;
+    font-size:45px;
+    transform:rotate(20deg);
 }
 
-@keyframes move{
-    50%{
-        transform:translateY(-10px);
-    }
+.text{
+    background:#222;
+    padding:15px;
+    border-radius:15px;
+    margin-top:20px;
+    font-size:17px;
 }
 
-.btn{
+button{
     margin-top:25px;
-    background:#fffc00;
-    color:#000;
-    padding:17px;
     width:100%;
-    border:0;
-    border-radius:35px;
-    font-size:20px;
+    padding:16px;
+    border:none;
+    border-radius:30px;
+    background:#fffc00;
+    font-size:18px;
     font-weight:bold;
-}
-
-.top{
-    display:flex;
-    justify-content:flex-end;
-    font-size:35px;
 }
 
 </style>
@@ -88,32 +85,32 @@ h1{
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<div class="top">
+<div class="menu">
 ⋮
 </div>
 
-<div class="logo">
+<div class="arrow">
+↗
+</div>
+
+<div class="snap">
 👻
 </div>
 
-<h1>Hap Linkun</h1>
+<h1>Open Link</h1>
 
-<div class="step">
-Kliko 3 pikat lart djathtas
+<div class="text">
+Tap the three dots in the top right corner
 </div>
 
-<div class="arrow">
-⬆
+<div class="text">
+Select "Open in Browser"
 </div>
 
-<div class="step">
-Pastaj hap në Browser
-</div>
-
-<button class="btn" onclick="openPage()">
-HAP TANI
+<button onclick="openLink()">
+OPEN LINK
 </button>
 
 </div>
@@ -121,8 +118,8 @@ HAP TANI
 
 <script>
 
-function openPage(){
-window.location.href="https://linktr.ee/Emilyyy_hot";
+function openLink(){
+    window.location.href="https://linktr.ee/Emilyyy_hot";
 }
 
 </script>
