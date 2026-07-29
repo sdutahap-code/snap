@@ -3,90 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Page</title>
+
+<title>My Profile</title>
 
 <style>
-body {
-  margin: 0;
-  height: 100vh;
+*{
+  box-sizing:border-box;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #111, #333);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.share {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  display: flex;
-  gap: 12px;
-  align-items: center;
+body{
+  margin:0;
+  min-height:100vh;
+  background:#000;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
-.share a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
+.top-menu{
+  position:fixed;
+  top:15px;
+  right:18px;
+  display:flex;
+  gap:15px;
+  align-items:center;
 }
 
-.dots {
-  font-size: 28px;
+.top-menu a{
+  color:white;
+  font-size:25px;
+  text-decoration:none;
 }
 
-.card {
-  text-align: center;
+.dots{
+  font-size:30px;
 }
 
-.profile {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+.container{
+  width:90%;
+  max-width:420px;
+  text-align:center;
 }
 
-h1 {
-  margin-top: 15px;
+.photo{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid white;
 }
 
-.button {
-  display: block;
-  width: 260px;
-  padding: 15px;
-  margin: 15px auto;
-  background: white;
-  color: black;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
+h1{
+  margin:20px 0 5px;
+  font-size:26px;
 }
+
+p{
+  opacity:.8;
+}
+
+.button{
+  display:block;
+  margin:15px 0;
+  padding:16px;
+  background:white;
+  color:black;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.button:hover{
+  transform:scale(1.05);
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="share">
+<div class="top-menu">
   <a href="https://linktr.ee/Emilyyy_hot">↗</a>
   <span class="dots">⋮</span>
 </div>
 
-<div class="card">
 
-<img class="profile" src="YOUR-IMAGE-LINK">
+<div class="container">
 
-<h1>Welcome to my page</h1>
+<img class="photo" src="YOUR-PHOTO-LINK">
 
-<p>Follow my links below</p>
+<h1>Your Name</h1>
+
+<p>Welcome to my page</p>
+
 
 <a class="button" href="https://linktr.ee/Emilyyy_hot">
 My Links
 </a>
 
 <a class="button" href="#">
+Instagram
+</a>
+
+<a class="button" href="#">
 Contact Me
 </a>
+
 
 </div>
 
