@@ -77,7 +77,7 @@ Continue to your destination.
 <script src="script.js"></script>
 
 </body>
-</html> 
+</html>
 *{
 margin:0;
 padding:0;
@@ -131,7 +131,49 @@ text-shadow:0 0 20px rgba(255,0,0,.5);
 }
 
 @keyframes bounce{
-0%{
+0%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+100%{transform:translateY(0);}
+}
+
+.hero{
+max-width:700px;
+margin:40px auto;
+padding:20px;
+}
+
+.detect{
+display:inline-block;
+padding:12px 22px;
+background:#111;
+border:1px solid #333;
+border-radius:999px;
+font-size:18px;
+margin-bottom:28px;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.card{
+background:#fff;
+color:#111;
+border-radius:28px;
+padding:34px;
+box-shadow:
+0 25px 60px rgba(0,0,0,.45),
+0 0 0 1px rgba(255,255,255,.05);
+}
+
+.card h1{
+font-size:40px;
+margin-bottom:12px;
+}
+
+.card p{
+font-size:18px;
+line-height:1.7;
+color:#555;
+margin-bottom:26px;
+}
 .step{
 display:flex;
 align-items:flex-start;
@@ -174,7 +216,68 @@ color:#111;
 font-size:24px;
 font-weight:700;
 transition:.25s;
-box-shadow:0 15px 35px rgba(255,212,0,.35
+box-shadow:0 15px 35px rgba(255,212,0,.35);
+}
+
+.btn:hover{
+transform:translateY(-4px);
+box-shadow:0 22px 45px rgba(255,212,0,.45);
+}
+
+.bottom{
+margin-top:28px;
+background:#fff;
+border-radius:22px;
+overflow:hidden;
+box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.item{
+padding:20px 24px;
+border-bottom:1px solid #ececec;
+font-size:18px;
+color:#111;
+background:#fff;
+}
+
+.item:last-child{
+border-bottom:none;
+}
+
+.footer{
+text-align:center;
+margin:35px 20px;
+color:#9c9c9c;
+font-size:15px;
+line-height:1.6;
+}
+
+@media(max-width:600px){
+
+.card{
+padding:24px;
+border-radius:22px;
+}
+
+.card h1{
+font-size:31px;
+}
+
+.text{
+font-size:17px;
+}
+
+.btn{
+font-size:21px;
+padding:18px;
+}
+
+.arrow{
+font-size:48px;
+right:12px;
+}
+
+}
 const link = "https://linktr.ee/Emilyyy_hot";
 
 // Butoni kryesor
@@ -252,32 +355,40 @@ document.addEventListener("mouseleave",()=>{
         © 2026 · Secure Access
     </small>
 </div>
-<div class="bottom">
+.bottom{
+margin-top:30px;
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
 
-    <div class="item">
-        🕘 Browser History
-    </div>
+.item{
+padding:20px;
+font-size:18px;
+color:#111;
+border-bottom:1px solid #ececec;
+transition:.25s;
+cursor:pointer;
+}
 
-    <div class="item">
-        ⚙ Browser Settings
-    </div>
+.item:last-child{
+border-bottom:none;
+}
 
-    <div class="item">
-        📋 Copy Link
-    </div>
+.item:hover{
+background:#f7f7f7;
+padding-left:28px;
+}
 
-</div>
+.footer{
+margin-top:35px;
+text-align:center;
+color:#777;
+font-size:14px;
+line-height:1.7;
+}
 
-<div class="footer">
-    <p>
-        If the page doesn't open automatically,
-        tap the three dots (⋮) in the top-right corner
-        and choose <b>Open in Browser</b>.
-    </p>
-
-    <br>
-
-    <small>
-        © 2026 · Secure Access
-    </small>
-</div> 
+.footer b{
+color:#ffd400; 
+}
