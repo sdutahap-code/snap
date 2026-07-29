@@ -1,72 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Open in Browser</title>
+<div class="top">
+    <div class="left">⚠ Restricted</div>
+    <div class="right">
+        Tap <span class="dots">•••</span> here ↑
+    </div>
+</div>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-background:#121212;
-color:#fff;
-}
-
+<div class="arrow">⬈</div>
 .top{
+position:fixed;
+top:0;
+left:0;
+width:100%;
 height:70px;
-background:#ffe600;
+background:#ffeb00;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:0 18px;
-font-weight:bold;
-font-size:20px;
+padding:0 20px;
+font-size:22px;
+font-weight:700;
 color:#000;
+z-index:1000;
+}
+
+.right{
+position:relative;
+padding-right:20px;
+}
+
+.dots{
+font-size:34px;
+letter-spacing:2px;
 }
 
 .arrow{
 position:fixed;
-top:20px;
-right:18px;
-font-size:80px;
-color:red;
-transform:rotate(-35deg);
-animation:bounce 1s infinite;
+top:5px;
+right:10px;
+font-size:95px;
+color:#ff0000;
+transform:rotate(-20deg);
+animation:arrowMove 1s infinite;
+z-index:1001;
 }
 
-@keyframes bounce{
-50%{transform:rotate(-35deg) translateY(-8px);}
+@keyframes arrowMove{
+0%,100%{
+transform:rotate(-20deg) translateY(0);
+}
+50%{
+transform:rotate(-20deg) translateY(-8px);
+}
 }
 
-.status{
-width:320px;
-margin:35px auto;
-padding:15px;
-border:1px solid #333;
-border-radius:30px;
-text-align:center;
-color:#bbb;
+body{
+padding-top:70px;
+background:#121212;
 }
-
-.card{
-background:#fff;
-color:#000;
-width:90%;
-max-width:370px;
-margin:20px auto;
-border-radius:25px;
-padding:25px;
-}
-
-.card h2{
-margin-bottom:15px;
-}
-
-.step{
-display
